@@ -1,0 +1,64 @@
+---
+title: "Work satisfaction study"
+author: "Team 11"
+date: "12/3/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(gridExtra)
+library(ggplot2)
+data <- read.table('~/src/work.sat(Project 11-12).txt', header = TRUE, sep = ',')
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Assignment 11 - Work satisfaction study
+
+A researcher wanted to study the impact of work load and salary on work satisfaction. 
+Work load and work satisfaction were measured using two validated rating scales, the so-called WL20 and WS20 scales respectively. Higher values of WL20 and WS20 are indicative, higher levels of work load and satisfaction, respectively. A total of 150 subjects were included in the study and the scales WL20 and WS20 were administered to each subject, information about their salary was collected as well. 
+
+The final data set had the following variables
+
+y: response variable containing the scores of the WS20 scale
+wl: categorical version of WL20 taking values High, Mooderate, Low 
+salary: categorical variable taking values High, Low
+
+Asigment 11: Refer to the Work satisfaction data set. Assume that the sample sizes do not reflect the importance of the treatment means. Carry out an unbalanced two-way analysis of variance of this data set, where the response of interest is WS20 scores and the two crossed factors salary and WL20.
+
+Asigment 12: Refer to the Work satisfaction data set. Assume that the sample sizes reflect the importance of the treatment means. Carry out an unbalanced two-way analysis of variance of this data set, where the response of interest is WS20 scores and the two crossed factors salary and WL20.
+
+Note: Students are encouraged to look for alternative analysis and  techniques in the literature if models studied in the course are not appropriate to answer the scientific questions. The idea is to mimic the real work of a consulting statistician in the academia or the industry. 
+
+## **Project description:** 
+
+A researcher wanted to study **the impact of work load and salary on work satisfaction.**
+
+**Work load** and **work satisfaction** were measured using two validated rating scales, the so-called **WL20** and **WS20** scales respectively. **Higher values of WL20 and WS20** are indicative **higher levels of work load and satisfaction**, respectively. A total of 150 subjects were included in the study and the scales WL20 and WS20 were administered to each subject, information about their salary was collected as well. 
+
+The final data set had the following variables
+
+**y:** response variable containing the scores of the WS20 scale
+
+**wl:** categorical version of WL20 taking values High, Mooderate, Low 
+
+**salary:** categorical variable taking values High, Low
+
+**Asigment 11:** Refer to the Work satisfaction data set. Assume that the sample sizes do not reflect the importance of the treatment means. Carry out an unbalanced two-way analysis of variance of this data set, where the response of interest is WS20 scores and the two crossed factors salary and WL20.
+
+```{r cars}
+summary(cars)
+```
+
+## Statistical hypotheses
+
+1. Whether it exists a difference in average work satisfaction on different levels of workload?
+2. Whether it exists a difference in average work satisfaction on different levels of salary?
+3. Is there is an interaction effect between salary and workload?
+
+**Remark:** Avoid the problem of data snooping or data fishing in formulating the hypothesis.
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
