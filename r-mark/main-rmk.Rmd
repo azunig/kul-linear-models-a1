@@ -3,13 +3,15 @@ title: "Work satisfaction study"
 author: "Team 11"
 date: "12/3/2020"
 output: pdf_document
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
 library(tidyverse)
 library(gridExtra)
 library(ggplot2)
-data <- read.table('~/src/work.sat(Project 11-12).txt', header = TRUE, sep = ',')
+data <- read.table('~/src/work.sat(Project 11-12).txt', header = TRUE, sep = ';')
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
@@ -21,12 +23,11 @@ Work load and work satisfaction were measured using two validated rating scales,
 The final data set had the following variables
 
 y: response variable containing the scores of the WS20 scale
-wl: categorical version of WL20 taking values High, Mooderate, Low 
+wl: categorical version of WL20 taking values High, Moderate, Low 
 salary: categorical variable taking values High, Low
 
-Asigment 11: Refer to the Work satisfaction data set. Assume that the sample sizes do not reflect the importance of the treatment means. Carry out an unbalanced two-way analysis of variance of this data set, where the response of interest is WS20 scores and the two crossed factors salary and WL20.
+Assignment 11: Refer to the Work satisfaction data set. Assume that the sample sizes do not reflect the importance of the treatment means. Carry out an unbalanced two-way analysis of variance of this data set, where the response of interest is WS20 scores and the two crossed factors salary and WL20.
 
-Asigment 12: Refer to the Work satisfaction data set. Assume that the sample sizes reflect the importance of the treatment means. Carry out an unbalanced two-way analysis of variance of this data set, where the response of interest is WS20 scores and the two crossed factors salary and WL20.
 
 Note: Students are encouraged to look for alternative analysis and  techniques in the literature if models studied in the course are not appropriate to answer the scientific questions. The idea is to mimic the real work of a consulting statistician in the academia or the industry. 
 
@@ -46,6 +47,7 @@ The final data set had the following variables
 
 **Asigment 11:** Refer to the Work satisfaction data set. Assume that the sample sizes do not reflect the importance of the treatment means. Carry out an unbalanced two-way analysis of variance of this data set, where the response of interest is WS20 scores and the two crossed factors salary and WL20.
 
+# martin 
 ```{r cars}
 summary(cars)
 ```
